@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Account"
+    android:scrollbars="none">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/toolbar"/>
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Manage and Update your account here. If you need any help, you can open a support ticket by emailing support@pickitup.com"
+    android:layout_marginLeft="11dp"
+    android:layout_marginRight="11dp"
+    android:layout_marginTop="18dp"
+    android:textSize="12sp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="13dp"
+            app:cardCornerRadius="5dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginBottom="32dp"
+            app:cardBackgroundColor="#F8EBF6"
+            app:cardElevation="0dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp"
+                android:text="Manage"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/purple"
+                    android:text="Full Name"
+                    android:textSize="14dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edittext"
+                    android:hint="John Doe"
+                    android:paddingLeft="20dp"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:paddingRight="20dp"
+                    android:textSize="15sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/purple"
+                    android:text="Email Id"
+                    android:textSize="14dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edittext"
+                    android:hint="example@gmail.com"
+                    android:paddingLeft="20dp"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:paddingRight="20dp"
+                    android:textSize="15sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/purple"
+                    android:text="Address"
+                    android:textSize="14dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Type your address"
+                    android:paddingLeft="20dp"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:paddingRight="20dp"
+                    android:textSize="15sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/purple"
+                    android:text="Phone"
+                    android:textSize="14dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Enter phone number"
+                    android:paddingLeft="20dp"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:paddingRight="20dp"
+                    android:textSize="15sp" />
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/buttoncolor"
+                    android:text="Save"
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            app:cardCornerRadius="5dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginBottom="32dp"
+            app:cardBackgroundColor="#F8EBF6"
+            app:cardElevation="0dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_marginTop="15dp"
+                    android:text="Change Password"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/purple"
+                    android:text="Old Password"
+                    android:textSize="14dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edittext"
+                    android:hint="password"
+                    android:paddingLeft="20dp"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:paddingRight="20dp"
+                    android:textSize="15sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/purple"
+                    android:text="New Password"
+                    android:textSize="14dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edittext"
+                    android:hint="password"
+                    android:paddingLeft="20dp"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:paddingRight="20dp"
+                    android:textSize="15sp" />
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/buttoncolor"
+                    android:text="Change"
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</ScrollView>

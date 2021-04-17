@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#A3008F">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hamburger"
+            android:padding="16dp"
+            android:visibility="gone"
+            android:src="@drawable/hamburger"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:id="@+id/toolbarbanner"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="16dp"
+            android:layout_toRightOf="@+id/hamburger"
+            android:src="@drawable/toolbarbanner"/>
+
+        <TextView
+            android:id="@+id/toolbarEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="john@gmail.com"
+            android:layout_marginTop="33dp"
+            android:gravity="right"
+            android:layout_marginLeft="48dp"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            />
+
+        <ImageView
+            android:id="@+id/toolbarSignout"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:src="@drawable/signout"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
